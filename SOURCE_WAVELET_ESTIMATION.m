@@ -5,7 +5,11 @@ clear all
 clc
 %% this parameter is the maximum range of sampled time for decimating or exported file:
 max_sample_time = 1001;
-%% scaling factor for source
+%% scaling factor for source   
+
+%%SCALE_FACTOR_first_instrument 是一个缩放因子，用于调整第一个仪器的源。
+%%它的值被设置为 10.^2，即 100。缩放因子通常用于调整数据以便更好地进行分析或可视化。在这种情况下，它可能用于调整源的幅度。
+
 SCALE_FACTOR_first_instrument = 10.^2;
 % this X1 is offset lines or column in the data set. You
 % can check it by header(:,:) = seismic.headers.
